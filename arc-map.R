@@ -133,4 +133,9 @@ map  # Print the map
 
 # Export as HTML file
 library(htmlwidgets)
-saveWidget(map, 'arc-reserves.html', selfcontained = TRUE)
+saveWidget(map, 'docs/index.html', 
+           title = "ARC Trust reserves map",
+           selfcontained = TRUE)
+
+# Don't forget to add the following line to the html index
+# <meta name="viewport" content="width=device-width, initial-scale=1" />
